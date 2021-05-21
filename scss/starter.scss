@@ -1,6 +1,6 @@
 // Override Bootstrap's Sass default variables
 //
-// Nearly all variables in Bootstrap are written with the `!default` flag.
+// Nearly all variables in Bootstrap are written with the `` flag.
 // This allows you to override the default values of those variables before
 // you import Bootstrap's source Sass files.
 //
@@ -33,6 +33,20 @@ $body-color: #333;
 $body-bg: #fff;
 $border-radius: .4rem;
 $success: #7952b3;
+body, html {
+    height: -webkit-fill-available;
+}
+
+
+$primary:       #000;
+$secondary:     #757575;
+$success:       #689F38;
+$info:          #03A9F4;
+$warning:       #F57C00;
+$danger:        #DD2C00;
+$light:         #eee;
+$dark:          #424242;
+
 
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
@@ -68,23 +82,14 @@ $success: #7952b3;
 @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
-// @import "bootstrap/scss/carousel";
+@import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/print";
-
-
+@import "bootstrap-icons/font/bootstrap-icons";
 //
 // Custom styles
-//
 
-@import "icon-list";
-
-body {
-  padding: 3rem 1.5rem;
-}
-
-// Style Bootstrap icons
-.bi {
-  fill: currentColor;
-}
+//@import "icon-list";
+@import "custom_menu";
+@import "main"

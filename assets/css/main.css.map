@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../../scss/main.scss"
+	],
+	"sourcesContent": [
+		"// Navbar\n\n.menu-item {\n    border-bottom : .25rem solid transparent;\n    a {\n        color: #787878;\n    }\n    &:hover {\n        border-bottom : .25rem solid #212121;\n        a {\n            color: #212121;\n        }\n        \n    }\n    &-active {\n        border-bottom : .25rem solid #000;\n        a {\n            color: #000;\n        }\n    }\n}\n\n.sub-menu {\n    opacity: 0;\n    transform: translate3d(0, -80%, 0);\n    transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.08s ease-in 0.08s;\n    z-index: -1;\n}\n\n.menu-item:hover .sub-menu {\n    opacity: 1;\n    transform: translate3d(0, 4px, 0);\n    z-index: 1;\n}\n\n.carousel-container {\n    height: 400px;\n}\n\n.mgmt-school {\n    img {\n        box-shadow: 0 0 2px 20px #ddd;\n        width: 70%;\n    }\n\n    div {\n        border: 1px solid #ccc;\n        border-radius: 20px;\n\n    }\n}"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,UAAU,CAAC;EACP,aAAa,EAAG,wBAAwB;CAiB3C;;AAlBD,AAEI,UAFM,CAEN,CAAC,CAAC;EACE,KAAK,EAAE,OAAO;CACjB;;AAJL,AAKI,UALM,AAKL,MAAM,CAAC;EACJ,aAAa,EAAG,oBAAoB;CAKvC;;AAXL,AAOQ,UAPE,AAKL,MAAM,CAEH,CAAC,CAAC;EACE,KAAK,EAAE,OAAO;CACjB;;AAGJ,AAAD,iBAAQ,CAAC;EACL,aAAa,EAAG,iBAAiB;CAIpC;;AALA,AAEG,iBAFI,CAEJ,CAAC,CAAC;EACE,KAAK,EAAE,IAAI;CACd;;AAIT,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,CAAC;EACV,SAAS,EAAE,uBAAuB;EAClC,UAAU,EAAE,SAAS,CAAC,IAAG,CAAC,mCAAmC,EAAE,OAAO,CAAC,KAAK,CAAC,OAAO,CAAC,KAAK;EAC1F,OAAO,EAAE,EAAE;CACd;;AAED,AAAA,UAAU,AAAA,MAAM,CAAC,SAAS,CAAC;EACvB,OAAO,EAAE,CAAC;EACV,SAAS,EAAE,sBAAsB;EACjC,OAAO,EAAE,CAAC;CACb;;AAED,AAAA,mBAAmB,CAAC;EAChB,MAAM,EAAE,KAAK;CAChB;;AAED,AACI,YADQ,CACR,GAAG,CAAC;EACA,UAAU,EAAE,iBAAiB;EAC7B,KAAK,EAAE,GAAG;CACb;;AAJL,AAMI,YANQ,CAMR,GAAG,CAAC;EACA,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,IAAI;CAEtB"
+}

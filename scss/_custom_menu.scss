@@ -1,0 +1,48 @@
+.menu-drawer-icon {
+    top : 7px;
+    left: 10px;
+}
+
+.side-drawer {
+    height: 100vh;
+    height: -webkit-fill-available;
+    width: 80%;
+    max-width: 300px;
+    background-color: #fff;
+    position: absolute;
+    transform: translate3d(-100%, -51px, 0);
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+    &-bg {
+        position: absolute;
+        width: 0;
+        height: 0;
+        background: rgba(111, 111, 111, 0.5);
+        top: -100%;
+        left: -100%;
+        transition: opacity .2s linear .07s;
+        opacity: .2;
+    }
+
+    &-close {
+        right: 10px;
+        top: 5px;
+    }
+
+    &-active {
+        transform: translate3d(0%, -52px, 0);
+        box-shadow: 4px 0px 20px 0px rgb(55, 55, 55);
+        z-index: 99;
+
+        &-bg {
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            z-index: 90;
+        }
+    }
+}
+

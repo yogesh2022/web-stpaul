@@ -1,0 +1,52 @@
+.menu-item {
+  border-bottom: .25rem solid transparent;
+}
+
+.menu-item a {
+  color: #787878;
+}
+
+.menu-item:hover {
+  border-bottom: .25rem solid #212121;
+}
+
+.menu-item:hover a {
+  color: #212121;
+}
+
+.menu-item-active {
+  border-bottom: .25rem solid #000;
+}
+
+.menu-item-active a {
+  color: #000;
+}
+
+.sub-menu {
+  opacity: 0;
+  transform: translate3d(0, -80%, 0);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.08s ease-in 0.08s;
+  z-index: -1;
+}
+
+.menu-item:hover .sub-menu {
+  opacity: 1;
+  transform: translate3d(0, 4px, 0);
+  z-index: 1;
+}
+
+.carousel-container {
+  height: 400px;
+}
+
+.mgmt-school img {
+  box-shadow: 0 0 2px 20px #ddd;
+  width: 70%;
+}
+
+.mgmt-school div {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
